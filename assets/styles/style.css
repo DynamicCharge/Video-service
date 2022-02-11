@@ -1,0 +1,228 @@
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+header {
+    flex: 0 0 auto;
+}
+main {
+    flex: 1 0 auto;
+}
+footer {
+    flex: 0 0 auto;
+}
+
+*{
+    font-family: 'Oswald', sans-serif;
+}
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+.header {
+    background: #06437C;    
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo  img{
+    height: 80px;
+}
+.header__search-form {
+    /* height: 63px; */
+}
+.header__search-form__input {
+    width: 544px;
+    border-radius: 20px;
+    padding: 5px;
+    background: #FFFFFF;
+    outline: none;
+}
+.header__search-form__submit {
+    height: 100%;
+    background: #FFFFFF;
+    border: 5px solid #000000;
+    box-sizing: border-box;
+    border-radius: 1px 20px 20px 1px;
+    position: relative;
+    right: 20px; 
+    top: 1px;
+}
+.header__search-form__submit img {
+    height: 20px;
+}
+.header__wrapper__link {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    
+    color: #FFFFFF;   
+    text-decoration: none; 
+}
+.header__wrapper__link:not(:last-child) {
+    margin-right: 10px;
+}
+
+.main {
+    padding: 228px 0 154px;
+}
+.main__video-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 383px);
+    gap: 40px;
+    justify-content: space-between;
+}
+.main__video-list__item__img-box {
+    width: 100%;
+    height: 200px;
+    background: #C4C4C4;
+}
+.main__video-list__item__name {
+    background: #06437C;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;   
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: #FFFFFF;     
+}
+
+.new-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.new-video__form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background: #06437C;
+    padding: 150px 47px 150px;
+}
+.new-video__form__input {
+    width: 400px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    padding: 7px 0;  
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    outline: none;
+    border: none;
+    color: #000000;      
+}
+.new-video__form__input:not(:last-child) {
+    margin-bottom: 25px;
+}
+.new-video__form__submit {
+    width: 50%;
+    font-size: 24px;
+    line-height: 29px;
+}
+.new-video__form__header {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 95px;
+    text-align: center;
+    
+    color: #FFFFFF;    
+}
+
+.video {
+    padding: 30px 0;
+}
+.video-box {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.video-box__main {
+    width: 100%;
+    height: 514px;
+    background: #C2C2C2;
+}
+.video-box__name {
+    width: 100%;
+    padding: 10px 0;
+    background: #06437C;
+    text-align: center;
+    display: block;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    
+    color: #FFFFFF; 
+}
+.video-box__wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 30px;  
+
+}
+.desc {
+    background: #06437C;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+.video-box__wrapper__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.video-box__wrapper__container__button {
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    background: #06437C;
+    padding: 15px 0;
+    border: none;
+    
+    color: #FFFFFF;    
+}
+.video-box__wrapper__comment {
+    margin-top: 30px;
+    background: #06437C;
+    font-size: 32px;
+    line-height: 32px;
+    color: #FFFFFF;    
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer {
+    height: 100px;
+    background: #06437C;    
+}
